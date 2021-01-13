@@ -15,7 +15,7 @@ function App() {
         <
         div className = "w-100"
         style = {
-            { maxWidth: "400px" } } >
+            { maxWidth: "600px", width: "100%" } } >
         <
         Router >
         <

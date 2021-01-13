@@ -15,29 +15,29 @@ const UploadForm = () => {
                 setError('');
             } else {
                 setFile(null);
-                setError('Por favor, selecciona una imagen en formato .png o .jpg');
+                setError('Por favor selecciona un archivo de imagen (png o jpg)');
             }
         };
 
         return ( <
-            form >
-            <
-            label >
-            <
-            input type = "file"
-            onChange = { handleChange }
-            />  <
-            span > + < /span>  <
-            /label>  <
-            div className = "output" > {
-                error && < div className = "error" > { error } < /div>} {
-                file && < div > { file.name } < /div> } {
-                file && < ProgressBar file = { file }
-                setFile = { setFile }
-                /> }  <
-                /div>  <
-                /form>
-            );
-        }
+                form >
+                <
+                label >
+                <
+                input type = "file"
+                onChange = { handleChange }
+                /> <
+                span > + < /span> <
+                /label> <
+                div className = "output" > {
+                    error && < div className = "error" > { error } < /div>} {
+                        file && < div > { file.name } < /div> } {
+                            file && < ProgressBar file = { file }
+                            setFile = { setFile }
+                            /> } <
+                            /div> <
+                            /form>
+                        );
+                    }
 
-        export default UploadForm;
+                    export default UploadForm;

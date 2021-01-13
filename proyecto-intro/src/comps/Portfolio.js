@@ -11,13 +11,14 @@ export default function Portfolio() {
     return ( <
         div className = "Portfolio"
         style = {
-            { position: 'fixed', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', fontSize: '20px', width: '33%' } } >
+            { position: 'absolute', fontSize: '20px', width: '100%' } } >
         <
         Title / >
         <
         UploadForm / >
         <
-        ImageGrid / > {
+        ImageGrid setSelectedImg = { setSelectedImg }
+        /> {
             selectedImg && ( <
                 Modal selectedImg = { selectedImg }
                 setSelectedImg = { setSelectedImg }
